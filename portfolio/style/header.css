@@ -1,0 +1,57 @@
+a:link { 
+    color:#e88d0b;
+    text-decoration: none;
+}  
+a:visited { 
+    color:#e88d0b;
+    text-decoration: none;
+} 
+a:hover { 
+    color:#c77909; 
+    text-decoration: underline;
+} 
+a:active { 
+    color:#c77909;
+    text-decoration: underline;
+}
+
+#home-circle { grid-area: homecircle; }
+#home { grid-area: home; }
+#about-circle { grid-area: aboutcircle; }
+#about { grid-area: about; }
+#films-circle { grid-area: filmscircle; }
+#films { grid-area: films; }
+#contact-circle { grid-area: contactcircle; }
+#contact { grid-area: contact; }
+
+#buttons {
+    display: grid;
+    grid-template-areas:
+        'homecircle home aboutcircle about filmscircle films contactcircle contact';
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#name {
+    text-align: center;
+    font-family: stsong; 
+    font-size: 3rem;
+}
+ 
+#header-line {
+    border-color: #e88d0b;
+    background-color: #e88d0b;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+#home-circle, #about-circle, #films-circle, #contact-circle {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #e88d0b;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 1rem;
+    visibility: hidden;
+}

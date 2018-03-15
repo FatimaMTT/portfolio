@@ -1,0 +1,156 @@
+html {
+    background-color: #fae5c2;
+    font-size: 100%;
+    font-family: 'Comfortaa', cursive;
+    color: #e88d0b;
+}
+
+a:link { 
+    color:#e88d0b;
+    text-decoration: none;
+}  
+a:visited { 
+    color:#e88d0b;
+    text-decoration: none;
+} 
+a:hover { 
+    color:#c77909; 
+    text-decoration: underline;
+} 
+a:active { 
+    color:#c77909;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #fae5c2;
+    font-family: 'Comfortaa', cursive;
+    color: #e88d0b;
+}
+
+/* Home Page */
+#demo-reel {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* About Page */
+
+.icon {
+    width: 2rem;
+    height: auto;
+}
+
+#headshot { grid-area: headshot; }
+#about-paragraph { grid-area: aboutparagraph;}
+#linked-in-icon { grid-area: linkedinicon;}
+#vimeo-icon { 
+    grid-area: vimeoicon;
+    justify-self: center;
+}
+#github-icon { 
+    grid-area: githubicon;
+    justify-self: end;
+}
+
+#about-page {
+    display: grid;
+    grid-template-areas: 
+        'headshot aboutparagraph aboutparagraph'
+        'linkedinicon vimeoicon githubicon';
+    margin: 1rem 12rem 1rem 12rem;
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#headshot {
+    width: 11rem;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+
+/* Films Page */
+
+div.gallery {
+    font-size: 1rem;
+    border: 0.1rem solid #e88d0b;
+    background-color: #FFF;
+}
+
+#animation { grid-area: animation}
+#motion-graphics { grid-area: motiongraphics}
+#live-action { grid-area: liveaction}
+#video1 { grid-area: video1}
+#video2 { grid-area: video2}
+#video3 { grid-area: video3}
+#video4 { grid-area: video4}
+#video5 { grid-area: video5}
+#video6 { grid-area: video6}
+#video7 { grid-area: video7}
+#video8 { grid-area: video8}
+#vide9 { grid-area: video9}
+#video10 { grid-area: video10}
+#video11 { grid-area: video11}
+
+#films-page {
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        'animation motiongraphics liveaction'
+        'video1 video7 video9'
+        'video2 video8 video10'
+        'video3 . video11'
+        'video4 . .'
+        'video5 . .'
+        'video6 . .';
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    grid-row-gap: 3rem;
+}
+
+#top-button {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1rem; /* Place the button at the bottom of the page */
+    right: 1rem; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border-color: #e88d0b; /* Set a border color */
+    outline: none; /* Remove outline */
+    background-color: #FFF; /* Set a background color */
+    color: #e88d0b; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem; /* Increase font size */
+}
+
+#top-button:hover {
+    background-color: #f1ead8; /* Change background color on hover */
+}
+
+/* Contact Page */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+#submit-button {
+    font-family: 'Comfortaa', cursive;
+    color: #e88d0b;
+    width: 7rem;
+    height: 4rem;
+    align-self: flex-end;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
