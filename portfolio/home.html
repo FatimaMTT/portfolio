@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Fatima's Porfolio Website</title>
+    <meta name="description" content="Home">
+    <meta name="author" content="Fatima Malo Torres Trueba">
+    <link rel="stylesheet" type="text/css" href="style/global.css?random.number">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+		<div id="name">
+            <p>Fátima Malo Torres Trueba</p>
+        </div>
+            <div id="buttons">
+                <a href="home" id="home"><p>Home</p></a>
+                <a href="about" id="about"><p>About</p></a>
+                <a href="work" id="work"><p>Work</p></a>
+                <a href="contact" id="contact"><p>Contact</p></a>
+            </div>
+        
+        <hr id="header-line">
+	</header>
+    
+    <main>
+        <div id= "demo-reels">
+		  <iframe id="animation-demo-reel" src="https://player.vimeo.com/video/258459060" width="576" height="324" style="float:none" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              
+            <div><iframe id="storyboard-reel" src="https://player.vimeo.com/video/316952473" width="576" height="324" style="float:none" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            
+              <button onclick="ShowDemoReelFunction()" id="reel-breakdown-button">See Animation Demo Reel Breakdown</button>
+            
+            <p>I have wanted to try storyboarding for a while, and I recently  decided to finally do it. I learned how to use Storyboard Pro while creating this, the second animatic/storyboard I've ever worked on.<br><br> To download the storyboard in PDF format <a id="download-link" href="/files/Untitled_Dog_Project_Storyboard.pdf" download>click here</a></p>
+		
+              <div id="animation-reel-breakdown">
+              <div id="animation-reel-breakdown-contents">
+                  <div><img class="img" src="images/leo.jpg"></div>  <div id="description1"><p><i>Leo</i> (currently in post-production)</p> <p>Autodesk Maya</p> <p>Scene from <i>Leo</i>, my BFA thesis project. I modeled and textured the classroom and some of the characters, rigged two of the characters, and animated and lit the scene.</p></div>  
+                <div><a href="films.html#video1"><img class="img" src="images/dog-walk-cycle.jpg"></a></div> <div id="description2"><p><i>Low Poly Dog Walk Cycle</i></p> <p>Autodesk Maya</p> <p>I modeled, textured, rigged, and animated this dog in Maya for a virtual reality game developed by fellow Emerson student Noel Perotta. It was our final project for our Advanced Interactive Media class.</p></div>
+                  <div><a href="films.html#video2"><img class="img" src="images/computer-animation-final.jpg"></a></div> <div id="description3"><p><i>The Sewing Room</i></p> <p>Autodesk Maya</p> <p>Final Project for my Computer Animation I class. I modeled and textured everything except for the character, and I animated and lit the scene.</p></div>
+              </div>
+            
+		</div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <small>Website created by Fátima Malo Torres Trueba</small>
+        <small>© 2019</small>
+    </footer>
+	<script src="script/script.js"></script>
+</body>
+</html>

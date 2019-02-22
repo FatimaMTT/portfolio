@@ -28,11 +28,72 @@ body {
     color: #e88d0b;
 }
 
-/* Home Page */
-#demo-reel {
+/*Header*/
+#buttons {
     display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 1.5rem;
+}
+
+#name {
+    text-align: center;
+    font-family: stsong; 
+    font-size: 3rem;
+}
+ 
+#header-line {
+    border-color: #e88d0b;
+    background-color: #e88d0b;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+/* Home Page */
+
+#demo-reels {
+    display: grid;
+    grid-template-columns: 576px 576px;
+    grid-template-rows: auto auto; 
     justify-content: center;
-    padding: 3rem;
+    grid-column-gap: 3rem; 
+    padding-top: 2rem;
+} 
+
+#reel-breakdown-button {
+    background-color: #FFF;
+    font-family: 'Comfortaa', cursive;
+    color: #e88d0b;
+    width: 21rem;
+    height: 4rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    border-radius: 1rem; 
+}
+
+#animation-reel-breakdown {
+    display: none;
+}
+
+#animation-reel-breakdown-contents {
+	margin: auto;
+	width: 50%;
+	display: grid;
+	grid-template-columns: auto auto;
+	width: 576px;
+	line-height: 1.5;
+	grid-gap: 2rem;
+}
+
+.img {
+	padding-top: 1rem;
+	height: 100px;
+	width: auto;
+} 
+
+#download-link {
+	color: #c77909;
+	font-weight: bold;
 }
 
 /* About Page */
@@ -42,75 +103,113 @@ body {
     height: auto;
 }
 
-#headshot { grid-area: headshot; }
-#about-paragraph { grid-area: aboutparagraph;}
-#linked-in-icon { grid-area: linkedinicon;}
-#vimeo-icon { 
-    grid-area: vimeoicon;
-    justify-self: center;
-}
-#github-icon { 
-    grid-area: githubicon;
-    justify-self: end;
-}
-
 #about-page {
-    display: grid;
-    grid-template-areas: 
-        'headshot aboutparagraph aboutparagraph'
-        'linkedinicon vimeoicon githubicon';
-    margin: 1rem 12rem 1rem 12rem;
+    padding: 2rem 8rem 2rem 8rem;
+    display: grid; 
+    grid-template-columns: 11rem auto;
     grid-gap: 2rem;
-    align-items: center;
     text-align: justify;
     line-height: 1.4;
+}
+
+#social-media-icons {
+    padding: 2rem 7rem 2rem 7rem;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+#linked-in-icon, #vimeo-icon, #instagram-icon, #github-icon {
+    padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
 #headshot {
     width: 11rem;
     height: auto;
     border-radius: 50%;
-    
 }
 
+/* Work Page */
 
-/* Films Page */
-
-div.gallery {
-    font-size: 1rem;
-    border: 0.1rem solid #e88d0b;
-    background-color: #FFF;
+.button {
+	margin-right: 3rem;
+	background-color: transparent;
+	border-color: transparent;
+	font-family: 'Comfortaa', cursive;
+	color: #e88d0b;
+	font-size: 1rem;
+	border-radius: 1rem;
 }
 
-#animation { grid-area: animation}
-#motion-graphics { grid-area: motiongraphics}
-#live-action { grid-area: liveaction}
-#video1 { grid-area: video1}
-#video2 { grid-area: video2}
-#video3 { grid-area: video3}
-#video4 { grid-area: video4}
-#video5 { grid-area: video5}
-#video6 { grid-area: video6}
-#video7 { grid-area: video7}
-#video8 { grid-area: video8}
-#vide9 { grid-area: video9}
-#video10 { grid-area: video10}
-#video11 { grid-area: video11}
+#mediums { 
+    padding: 2rem 7rem 2rem 7rem;
+    display: flex;
+	justify-content: flex-start;
+}
 
-#films-page {
-    text-align: center;
-    display: grid;
-    grid-template-areas: 
-        'animation motiongraphics liveaction'
-        'video1 video7 video9'
-        'video2 video8 video10'
-        'video3 . video11'
-        'video4 . .'
-        'video5 . .'
-        'video6 . .';
-    justify-content: space-evenly;
-    font-size: 1.6rem;
-    grid-row-gap: 3rem;
+#all-button {
+	background-color: #FFF;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#video-images {
+	margin: 0rem 8rem 0rem 8rem;
+	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.video-images {
+	height: 170px;
+	width: auto;
+} 
+
+.video-images:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+	padding-top: 6rem; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+	color: #fff;
+	width: 640px;
+}
+
+.modal-content {
+	display: grid;
+	grid-template-rows: auto auto;
+	justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #f1f1f1;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #top-button {
@@ -145,6 +244,7 @@ div.gallery {
 }
 
 #submit-button {
+    background-color: #FFF;
     font-family: 'Comfortaa', cursive;
     color: #e88d0b;
     width: 7rem;
@@ -154,3 +254,14 @@ div.gallery {
     font-size: 1rem;
     border-radius: 1rem;
 }
+
+/*Footer*/
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+
+

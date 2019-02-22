@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <title>Fatima's Porfolio Website</title>
+      <meta name="description" content="Films">
+      <meta name="author" content="Fatima Malo Torres Trueba">
+      <link rel="stylesheet" type="text/css" href="style/global.css?random.number">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+   </head>
+	
+   <body>
+      <header>
+		<div id="name">
+            <p>Fátima Malo Torres Trueba</p>
+        </div>
+            <div id="buttons">
+                <a href="home" id="home"><p>Home</p></a>
+                <a href="about" id="about"><p>About</p></a>
+                <a href="work" id="work"><p>Work</p></a>
+                <a href="contact" id="contact"><p>Contact</p></a>
+            </div>
+        
+        <hr id="header-line">
+	</header>
+	   
+      <main>
+		  <div id="mediums">
+            <button onclick="AllVideosFunction()" id="all-button" class="button">All</button>
+            <button onclick="AnimationVideosFunction()" id="animation-button" class="button">Animation</button>
+            <button onclick="MotionGraphicsVideosFunction()" id="motion-graphics-button" class="button">Motion Graphics</button>
+            <button onclick="LiveActionVideosFunction()" id="live-action-button" class="button">Live Action</button>
+			<button onclick="AnimaticsFunction()" id="animatics-button" class="button">Animatics</button>
+        </div>
+		  
+         <div id="video-images">
+			 <div class="animatics"><img id="Dog-Project-Animatic-Img" class="video-images" src="images/untitled-dog-project.jpg" alt="Dog ProjectAnimatic"></div>
+			 <div class="animation"><img id="Dog-Walk-Cycle-Img" class="video-images" src="images/dog-walk-cycle.jpg" alt="Dog Walk Cycle"></div>
+			 <div class="motion-graphics"><img id="Livestock-Farming-Img" class="video-images" src="images/livestock-farming.jpg" alt="Livestock Farming"></div>
+			 <div class="motion-graphics"><img id="Unique-Img" class="video-images" src="images/unique.jpg" alt="Unique"></div>
+			 <div class="animation"><img id="Computer-Animation-Final-Img" class="video-images" src="images/computer-animation-final.jpg" alt="Computer Animation Final Project"></div>
+			 <div class="animation"><img id="Haunted-Room-Img" class="video-images" src="images/haunted-room.jpg" alt="Haunted Room"></div>
+			 <div class="animatics"><img id="Pearl-Divers-Img" class="video-images" src="images/pearl-divers.jpg" alt="Pearl Divers"></div>
+			 <div class="animation"><img id="2D-Walk-Cycle-Img" class="video-images" src="images/2D-walk-cycle.jpg" alt="2D Walk Cycle"></div>
+			 <div class="animation"><img id="Making-People-Smile-Img" class="video-images" src="images/making-people-smile.jpg" alt="Making People Smile"></div>
+			 <div class="live-action"><img id="Long-Shot-Img" class="video-images" src="images/long-shot.jpg" alt="Long Shot"></div>
+			 <div class="live-action"><img id="Stop-It-Img" class="video-images" src="images/stop-it.jpg" alt="Stop It"></div>
+			 <div class="live-action"><img id="Movimiento-Del-Sol-Img" class="video-images" src="images/el-movimiento-del-sol.jpg" alt="El-Movimiento-Del-Sol"></div></div>
+		  
+		  <div id="videos">
+			  <div id="modal_11" class="modal">
+				  <span id="close_11" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Dog-Project-Animatic-Video" src="https://player.vimeo.com/video/316952473" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Dog-Project-Animatic-Caption" class="caption">Learned how to use Storyboard Pro while creating this, the second animatic/storyboard that I've ever worked on.</p>
+				</div>
+			  </div>
+
+			  <div id="modal_10" class="modal">
+				  <span id="close_10" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Dog-Walk-Cycle-Video" src="https://player.vimeo.com/video/276783892" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Dog-Walk-Cycle-Caption" class="caption">I modeled, textured, rigged, and animated this dog in Maya for a virtual reality game developed by fellow Emerson student Noel Perotta. It was our final project for our Advanced Interactive Media class.</p>
+				</div>
+			  </div>
+
+
+			  <div id="modal_09" class="modal">
+				  <span id="close_09" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Livestock-Farming-Video" src="https://player.vimeo.com/video/259524450" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Livestock-Farming-Caption" class="caption">An explainer video about how Livestock Farming contributes to Climate Change. This was my final project for my Motion Graphics class</p>
+				</div>
+			  </div>
+
+			  <div id="modal_08" class="modal">
+				  <!-- The Close Button -->
+				  <span id="close_08" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Unique-Video" src="https://player.vimeo.com/video/258903617" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Unique-Caption" class="caption">First assignment for my Motion Graphics class. The assignment consisted of creating a project at least 15 seconds long that explores one particular noun. The project was to be made entirely within After Effects and should not contain any live action footage. However, still images are permitted.</p>
+				</div>
+			  </div>
+
+			  <div id="modal_07" class="modal">
+				  <span id="close_07" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Computer-Animation-Final-Video" src="https://player.vimeo.com/video/258536496" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Computer-Animation-Final-Caption" class="caption">Final Project for my Computer Animation I class. I modeled and textured everything except for the character, and I animated and lit the scene.</p>
+				</div>
+			  </div>
+
+			  <div id="modal_06" class="modal">
+				  <span id="close_06" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Haunted-Room-Video" src="https://player.vimeo.com/video/258536213" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Haunted-Room-Caption" class="caption">Project for my Computer Animation class. The assignment consisted of building a room and animating each the pieces of furniture to make the room appear hunted.</p>
+				</div>
+			  </div>
+
+			  <div id="modal_05" class="modal">
+				  <span id="close_05" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Pearl-Divers-Video" src="https://player.vimeo.com/video/258535526" width="640" height="411" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Pearl-Divers-Caption" class="caption">Final project for my Drawing for Time-Based Media class. The assignment consisted of choosing a story, drawing a storyboard, and then editing it together with sound in order to create an animatic.</p>
+			</div>
+			  </div>
+
+			  <div id="modal_04" class="modal">
+				  <span id="close_04" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="2D-Walk-Cycle-Video" src="https://player.vimeo.com/video/262649931" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="2D-Walk-Cycle-Caption" class="caption">Walk cycle animated using Adobe Animate.</p>
+			</div>
+			  </div>
+
+			  <div id="modal_03" class="modal">
+				  <span id="close_03" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Making-People-Smile-Video" src="https://player.vimeo.com/video/258534734" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Making-People-Smile-Caption" class="caption">Project for my Foundations in Visual and Media Arts Productions class. The assignment consisted of creating a piece of media of any style, subject, and genre. It had to demonstrate creativity, original, deep thought, and some kind of technical practice, and it could be video, still images, audio, interactive, or anything you can think of media-related.</p>
+			</div>
+			  </div>
+
+			  <div id="modal_02" class="modal">
+				  <span id="close_02" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Long-Shot-Video" src="https://player.vimeo.com/video/258528738" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Long-Shot-Caption" class="caption">Long shot made for an assignment for my Foundations in Visual and Media Arts Class.<br><br>
+					  Description of the assignment:<br>
+					  30 seconds minimum, 2 minutes maximum. No editing. Silent.<br>
+					  In a single shot, create a portrait of a place or object through the “lens” of a specific emotion or feeling. There can be people in your shot, but they should not be the main subject of your piece. Don’t focus on what the objects/people can do to create the emotion, focus on what the camera can do. Use composition, the lens, and the camera settings to be evocative. The camera can move or be still, zoom and/or focus can change or remain constant, etc. <br>
+					  <br>
+					  Description of my project:<br>
+					  The feeling that I was striving for was cold, and to get this feeling I went to the lake in the commons that was frozen. There were ducks in that lake, and I decided that it would work better to shoot the ducks once the lake was not frozen anymore. I think that humans always see animals as very calm creatures who have no worries, especially creatures like ducks that just chill in the water. So my feeling changed to calmness, so I used the zoom of the camera to shoot only the ducks and the water, which was what, for me, showed the most calmness. I also didn’t move the camera to emphasize the calmness.</p>
+				</div>
+			  </div>
+
+			  <div id="modal_01" class="modal">
+				  <span id="close_01" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Stop-It-Video" src="https://player.vimeo.com/video/258528487" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Stop-It-Caption" class="caption">Short film produced while attending a summer program at NYFA in 2012.</p>
+				</div>
+			  </div>
+
+			  <div id="modal_00" class="modal">
+				  <span id="close_00" class="close">&times;</span>
+				  <div class="modal-content">
+				  <iframe id="Movimiento-Del-Sol-Video" src="https://player.vimeo.com/video/258528378" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				  <p id="Movimiento-Del-Sol-Caption" class="caption">Video of the sunrise and sunset shot for art class while I was in High School.</p>
+				</div>
+			  </div> 
+			</div>
+		  
+      </main>
+      <footer>
+         <small>Website created by Fátima Malo Torres Trueba</small>
+         <small>© 2019</small>
+      </footer>
+      <script src="script/script.js"></script>
+   </body>
+</html>

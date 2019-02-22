@@ -11,11 +11,24 @@
 </head>
 
 <body>
-    <header><?php include("header.php"); ?></header>
+    <header>
+		<div id="name">
+            <p>Fátima Malo Torres Trueba</p>
+        </div>
+            <div id="buttons">
+                <a href="home" id="home"><p>Home</p></a>
+                <a href="about" id="about"><p>About</p></a>
+                <a href="work" id="work"><p>Work</p></a>
+                <a href="contact" id="contact"><p>Contact</p></a>
+            </div>
+        
+        <hr id="header-line">
+	</header>
     
     <main>
+		<!--<p>Hello there! We are currently fixing some issues that we encountered on this page. If you need to contact Fatima, please email her at fatimaanimation@gmail.com Thank you! </p>-->
+		
         <?php
-        
         if(isset($_POST['submit'])){
             
             $first_name = trim ($_POST['first_name']);
@@ -29,7 +42,7 @@
             }
             
             if ($error == false) {
-            $to = "f_malotorrestrueba@emerson.edu";
+            $to = "fatimaanimation@gmail.com";
             $from = $_POST['email'];
             $first_name = $_POST['first_name'];
             $last_name = $_POST['last_name'];
@@ -50,7 +63,6 @@
                 echo "<p>$error</p>";
             }
         }
-        
         ?>
         
         <form id="contact-form" action="" method="post">
@@ -62,7 +74,10 @@
         </form>
     </main>
 
-    <footer><?php include("footer.php"); ?></footer>
+    <footer>
+        <small>Website created by Fátima Malo Torres Trueba</small>
+        <small>© 2019</small>
+    </footer>
 
 </body>
 </html>
